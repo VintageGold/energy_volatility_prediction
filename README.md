@@ -1,5 +1,9 @@
 # Energy Volatility Prediction
 ## UMBC Fall 2021 Data Science Capstone
+
+### Abstract
+Our project aims to understand the volatility of electricity prices across the U.S. aggregated by state and years 2001-2020 across features encompassing fuel sources (MWh and powerplant count), fuel consumption by residential, commercial, and industrial sectors (normalized by state population and number of electric accounts), weather (temperature and drought index), and historical futures contracts (open, high, low, close, and volume for Crude Oil, Natural Gas, and Heating Oil futures contracts) to explore this question. Our target variable is the coefficient of variation in electricity price. The model that best explains our target variable is an XGBoost Regressor model. This model achieved an adjusted R2 of 0.77 and heavily relies on the coefficient of variation of the previous year, state, the Brents Crude Oil futures contract data, and features that reflect the supply and demand of electricity (ex. Total plant count). This model performs consistently, with exceptions to LA, OK, RI, and HI. A particular anomaly is NV which trains well, but struggles with the test data.
+
 ### Instructions for use:
 1. We have a data folder saved on our google drive as a shared drive. This contains the data gathered and processed in the notebooks found in this repository.
   a. Permission is required to access this folder (our professor has permission).
